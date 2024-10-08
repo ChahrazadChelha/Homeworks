@@ -1,0 +1,38 @@
+Entities and Their Attributes:
+1. Enclosure
+○ Attributes:
+■ Enclosure Number (Primary Key)
+■ Habitat Type
+■ Size (in square meters)
+■ Main Feature
+2. Animal
+○ Attributes:
+■ Animal ID (Primary Key)
+■ Name
+■ Date of Birth
+■ Diet
+■ Description
+3. Species
+○ Attributes:
+■ Species Name (Primary Key)
+■ Description
+■ Habitat Type
+4. Animal_Enclosure ○ Attributes:
+■ Animal ID (Foreign Key to Animal)
+■ Enclosure Number (Foreign Key to Enclosure)
+■ Start Date
+■ End Date
+5. Animal_Note
+○ Attributes:
+■ Note ID (Primary Key)
+■ Animal ID (Foreign Key to Animal)
+■ Note Date
+■ Note Content
+6. Species_Compatibility ○ Attributes:
+■ Species A (Foreign Key to Species)
+■ Species B (Foreign Key to Species)
+■ Compatibility Rating
+7. Species_Enclosure ○ Attributes:
+■ Species Name (Foreign Key to Species)
+■ Enclosure Number (Foreign Key to Enclosure)
+■ Max Number of Animals
